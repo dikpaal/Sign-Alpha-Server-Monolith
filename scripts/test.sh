@@ -7,7 +7,7 @@
 # ============================================
 
 # Config
-BASE_URL="http://localhost:8080"
+BASE_URL="http://localhost:8081"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(dirname "$SCRIPT_DIR")"
 SERVER_DIR="$PROJECT_DIR/server"

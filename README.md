@@ -163,7 +163,7 @@ make docker-stop
 Or manually:
 ```bash
 docker build -t trading-pipeline .
-docker run -p 8080:8080 trading-pipeline
+docker run -p 8081:8081 trading-pipeline
 ```
 
 ### TUI Controls
@@ -179,21 +179,21 @@ docker run -p 8080:8080 trading-pipeline
 
 ```bash
 # Get current price
-curl http://localhost:8080/api/price
+curl http://localhost:8081/api/price
 
 # Get stats from C++ processor
-curl http://localhost:8080/api/stats
+curl http://localhost:8081/api/stats
 
 # Get current symbol
-curl http://localhost:8080/api/symbol
+curl http://localhost:8081/api/symbol
 
 # Change to Ethereum
-curl -X POST http://localhost:8080/api/symbol \
+curl -X POST http://localhost:8081/api/symbol \
   -H "Content-Type: application/json" \
   -d '{"symbol":"ethusdt"}'
 
 # List available coins
-curl http://localhost:8080/api/coins
+curl http://localhost:8081/api/coins
 ```
 
 ### Run Test Suite

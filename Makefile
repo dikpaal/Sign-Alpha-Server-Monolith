@@ -45,7 +45,7 @@ docker:
 docker-run: docker
 	@echo "Starting container..."
 	docker-compose up -d
-	@echo "Server running at http://localhost:8080"
+	@echo "Server running at http://localhost:8081"
 	@echo "Run 'make tui' to connect"
 
 docker-stop:

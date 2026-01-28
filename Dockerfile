@@ -30,7 +30,7 @@ COPY --from=builder /app/trading-pipeline .
 COPY --from=builder /app/libprocess.so .
 
 # Expose port
-EXPOSE 8080
+EXPOSE 8081
 
 # Set library path and run
 ENV LD_LIBRARY_PATH=/app

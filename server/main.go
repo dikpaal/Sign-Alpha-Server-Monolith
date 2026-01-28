@@ -158,7 +158,7 @@ func main() {
 
 	// Start HTTP server
 	log.Printf("Tracking: %s", coinName)
-	log.Println("Server running on http://localhost:8080")
+	log.Println("Server running on http://localhost:8081")
 	log.Println("Endpoints:")
 	log.Println("  GET  /api/price   - Current price")
 	log.Println("  GET  /api/stats   - Moving average, high, low")
@@ -169,7 +169,7 @@ func main() {
 	log.Println("")
 	log.Println("Run 'make tui' in another terminal to view dashboard")
 
-	if err := http.ListenAndServe(":8080", nil); err != nil {
+	if err := http.ListenAndServe(":8081", nil); err != nil {
 		log.Fatal(err)
 	}
 }

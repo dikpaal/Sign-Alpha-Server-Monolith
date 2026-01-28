@@ -12,7 +12,7 @@ import (
 	"github.com/charmbracelet/lipgloss"
 )
 
-const serverURL = "http://localhost:8080"
+const serverURL = "http://localhost:8081"
 
 // Styles
 var (
@@ -109,13 +109,13 @@ type symbolChangedMsg struct{}
 
 // Model
 type model struct {
-	mode        viewMode
-	data        DashboardData
-	history     []float64
-	quitting    bool
-	coins       []CoinInfo
-	coinCursor  int
-	switching   bool
+	mode       viewMode
+	data       DashboardData
+	history    []float64
+	quitting   bool
+	coins      []CoinInfo
+	coinCursor int
+	switching  bool
 }
 
 func initialModel() model {
