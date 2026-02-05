@@ -1,6 +1,6 @@
-# Real-Time Crypto Data Pipeline
+# Distributed Crypto Analysis System
 
-A real-time data acquisition pipeline that streams cryptocurrency market data from Binance, processes it through a C++ signal processing module, and serves it via a Go HTTP/WebSocket server with a terminal-based dashboard.
+An architecture that streams cryptocurrency market data from Binance API, processes it through a C++ signal processing module, and serves it via a Go HTTP/WebSocket server with a terminal-based dashboard.
 
 ## Features
 
